@@ -1,0 +1,16 @@
+N = int(input())
+
+x=list()
+u=list()
+
+i = 1
+for i in range(N):
+    value,variaty = input().split()
+    if variaty == "BTC":
+        abs_value = 380000.0*float(value)
+    else:
+        abs_value = float(value)
+    x.append(abs_value)
+    #print(x)
+total = sum(x)
+print(total)
